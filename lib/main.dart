@@ -1,4 +1,3 @@
-import 'package:days_challange/Screens/HomeScreen.dart';
 import 'package:days_challange/Screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -11,26 +10,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Days Challange',
+      debugShowCheckedModeBanner: false,
+      title: 'Days Challenge',
       theme: ThemeData(
-
         appBarTheme: AppBarTheme(
           color: Colors.white,
           elevation: 0,
-          iconTheme: IconThemeData(
-            color: Colors.black,
-            size: 30
-          ),
+          iconTheme: IconThemeData(color: Colors.black, size: 30),
           centerTitle: true,
         ),
-
         primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: SplashScreen(),
-
     );
   }
 }
-
-
